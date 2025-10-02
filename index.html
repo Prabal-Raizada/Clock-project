@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="clock-container">
+            <div class="buttons">
+                <button id="clockbtn" class="tab-btn">Clock</button>
+                <button id="stopwatchbtn" class="tab-btn">Stop Watch</button>
+                <button id="alarambtn" class="tab-btn">Alarm</button>
+            </div>
+            <div class="timeWrapper"></div>
+            <div class="stopwatchWrapper not-active">
+                <div class="stopwatch-display">00:00:00</div>
+                <div class="stopwatch-buttons">
+                    <button id="startbtn">Start</button>
+                    <button id="pausebtn">Pause</button>
+                    <button id="resetbtn">Reset</button>
+                </div>
+            </div>
+
+            <div class="alarmContainer not-active"></div>
+        </section>
+        <footer>
+            <div class="note">Note - This Time is according to Indian STandard Time (New Delhi) GMT(+5:30)</div>
+            <div class="othertimezone">
+                <li><a href="">New Delhi</a></li>
+                <li><a href="">London</a></li>
+                <li><a href="">Sydney</a></li>
+                <li><a href="">San Francisco</a></li>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
