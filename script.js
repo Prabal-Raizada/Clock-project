@@ -10,6 +10,8 @@ const tabs = {
 }
 const btn = document.querySelectorAll(".tab-btn")
 
+timeWrapper.classList.contains("not-active")?clockbtn.style.backgroundColor = "#fff" : clockbtn.style.backgroundColor = "#1ff685";
+
 function showSection(activeId){
     Object.values(tabs).forEach(section => section.classList.add("not-active"))
     tabs[activeId].classList.remove("not-active")
